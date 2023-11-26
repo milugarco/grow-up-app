@@ -1,5 +1,6 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import SignIn from "../views/SignIn";
+import DashBoard from "../views/DashBoard";
 
 
 
@@ -13,12 +14,13 @@ export default function Routes() {
                 component={SignIn}
                 options={{headerShown: false}}
             />
-            {/* <Stack.Screen
+            <Stack.Screen
                 name="DashBoard"
-                component={}
+                component={DashBoard}
                 options={{headerShown: false}}
                 
             />
+             {/*
             <Stack.Screen
                 name="SignUp "
                 component={}

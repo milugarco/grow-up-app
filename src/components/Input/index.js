@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { TextInput } from "react-native";
 
-const InputCustom = ({ placeholder, backgroundColor, width, marginBottom, marginTop, onChange }) => {
+const InputCustom = ({ placeholder, backgroundColor, width, marginBottom, marginTop, top, onChange }) => {
     const [newValue, setNewValue] = useState();
 
     const handleChange = (value) => {
@@ -26,6 +26,7 @@ const InputCustom = ({ placeholder, backgroundColor, width, marginBottom, margin
                 borderRadius: 50,
                 marginBottom: marginBottom ? marginBottom : 0,
                 marginTop: marginTop ? marginTop : 0,
+                top: top ? top : 0
             }}
             onChangeText={handleChange}
         />
